@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container-main {
+    background-image: linear-gradient(to right, #b3dfdf, #fffffe);
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-inner {
+    background: rgba(0, 0, 0, 0.2);
+
+}
+
+.btn1 {
+    -webkit-border-radius: 25;
+    -moz-border-radius: 25;
+    border-radius: 25px;
+    font-family: Georgia;
+    color: #ffffff;
+    font-size: 18px;
+    background: #ffae00;
+    padding: 16px 30px 16px 30px;
+    text-decoration: none;
+}
+
+.btn2 {
+    -webkit-border-radius: 25;
+    -moz-border-radius: 25;
+    border-radius: 25px;
+    border-color: #ffae00;
+    font-family: Georgia;
+    color: #ffae00;
+    font-size: 18px;
+    background: #ffffff;
+    padding: 16px 30px 16px 30px;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "Knewave";
+    src: url(font/Knewave-Regular.ttf);
+}
+
+.akshi-font {
+    font-family: "Knewave", cursive;
+
+}
+
+
+
+
+
+/* home page */
+/* review section */
+.review-img {
+    background-repeat: no-repeat;
+    background-image: url(../image/cake-9747.png);
+    background-position-y: -50%;
+    background-position-x: 120%;
+    /* background-position: center; */
+    background-size: 45%;
+    opacity: 40%;
+}
+
+
+.container-main1 {
+    background-image: linear-gradient(to right, #ece6e5, #d69d9d);
+    width: 100%;
+    min-height: 380px;
+}
+
+
+
+
+
+
+
+
+/* hero section */
+.hero-section {
+    background: linear-gradient(90.23deg, #DBFFF9 8.19%, rgba(253, 95, 95, 0.42) 99.82%);
+    background-blend-mode: multiply;
+    height: 678px;
+}
+
+.c-btn {
+    width: 120px;
+    height: 50px;
+    border-radius: 100px;
+    border: none;
+}
+
+.c-btn-1 {
+    background-color: orangered;
+    color: white;
+}
+
+.c-btn-2 {
+    background-color: white;
+    color: orangered;
+    border: orangered 2px solid;
+}
+
+.hero-bg-img {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+}
+
+.image-section {
+    margin-top: 130px;
+}
+
+.hero-paragraph {
+    width: 50%;
+}
+
+.hero-paragraph-appear {
+    animation: textAppear;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+
+@media (min-width: 768px) {
+
+    .image-section {
+        margin-top: 300px;
+    }
+
+
+}
+
+
+@media (max-width: 992px) {
+
+    .hero-content {
+        transform: scale(90%);
+    }
+
+
+    .hero-paragraph {
+        width: 90%;
+    }
+
+    .image-section {
+        margin-top: 10px;
+    }
+
+
+}
+
+
+
+
+
+/* animations */
+/* hero section text appear */
+@keyframes textAppear {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+
+.button-selected {
+    background-color: #c7aa07;
+}
+
+.qty-buttons {
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 30px;
+    border: solid 1px rgb(72, 71, 71);
+}
+
+.qty-inc,
+.qty-dec {
+    width: 100%;
+    height: 50%;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.qty-inc {
+    border-top-right-radius: 5px;
+}
+
+.qty-dec {
+    border-bottom-right-radius: 5px;
+}
+
+.splide__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 576px) {
+    .carousel-caption {
+        bottom: 10px;
+    }
+}
